@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBIES - Áo Khoác Blazer Nữ Sanae Cropsuit</title>
+    <link rel="shortcut icon" href="https://bizweb.dktcdn.net/100/462/587/themes/880841/assets/favicon.png?1724310613023" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web//fontawesome-free-6.6.0-web/css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/Dinhdang.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/Reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .trangchu-den {
+            background-color: rgba(138, 135, 135, 0.1);
+            height: 54px;
+            justify-content: center;
+            position: relative;
+            top:80px;
+        }
+
+        .den {
+            justify-content: center;
+            display: flex;
+            height: 54px;
+            padding: 15px 0px;
+            font-size: 14px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .trangchu-den ul {
+            display: flex;
+        }
+
+        .trangchu-den ul li{
+            padding-right: 10px;
+        }
+
+        .chu{
+            color: #881b1b;
+        }
+        .product-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            top: 85px;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+        .thumbnail-container {
+            display: flex;
+            gap: 5px;
+            justify-content: space-evenly;
+            margin-top: 10px;
+            position: relative;
+        }
+        .thumbnail {
+            width: 60px;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Arrow buttons for navigation */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        .arrow-left {
+            left: 0;
+        }
+
+        .arrow-right {
+            right: 0;
+        }
+
+        .arrow:focus {
+            outline: none;
+        }
+        .product-info-section h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-code,
+        .product-brand,
+        .product-status {
+            font-size: 14px;
+            color: #555;
+            padding: 5px 0;
+        }
+
+        .product-price {
+            margin: 20px 0;
+        }
+
+        .sale-price {
+            font-size: 22px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .original-price {
+            font-size: 16px;
+            color: #999;
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .product-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .size-selection,
+        .color-selection {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .size-button {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+        }
+
+        .size-button.active {
+            background-color: #333;
+            color: white;
+        }
+
+        .color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+
+        .color.black {
+            background-color: black;
+        }
+
+        .color.white {
+            background-color: white;
+        }
+
+        .color.active {
+            border: 2px solid #333;
+        }
+
+        .additional-links {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .view-related-products {
+            text-decoration: none;
+            color: #b30000;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .actions button {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #888;
+        }
+        .quantity-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .quantity-button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .quantity-button:hover {
+            background-color: #ddd;
+        }
+
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        .add-to-cart-button {
+            background-color: #ff5c5c;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #f0f0f0;
+            color:#333;
+        }
+
+        .cart-message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="grid wide">
+            <div class="row">
+                <div class="l-2 m-6 logo--center">
+                <div class="logo__img">
+                    <a href="#">
+                    <img src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" class="logo__img" data-src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" alt="Thời Trang Nữ RUBIES" class="lazyload loaded" data-was-processed="true" title="Thời trang nữ RUBIES">
+                    </a>
+                </div>
+                </div>
+                <div class="l-8 m-0 header-top">
+                    <div class="nav__a">
+                    <ul class="nav__a--list">
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-phone"></i>
+                        Hotline:
+                        <div class="khoi-hotline">
+                            070 347 0938
+                            <a href="tel:+0703470938" class="hotline-number">Gọi: 070 347 0938</a>
+                        </div>
+                        </li>
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">
+                            Hệ thống cửa hàng
+                        </a>                   
+                        </li>
+                        <li class="nav__a--item">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Tìm sản phẩm..." title="Vui lòng điền vào trường này.">
+                            <button class="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="nav__b">
+                    <ul class="nav__b--list">
+                        <li class="nav__b--item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="nav__b--item">
+                        <a href="">Thời trang nữ</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">Váy</a></li>
+                            <li><a href="">Áo nữ</a></li>
+                            <li><a href="">Quần nữ</a></li>
+                            <li><a href="">Set đồ nữ</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">Bộ sưu tập</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">KNITWEAR</a></li>
+                            <li><a href="">BST Tết 2024</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="#">
+                            Tin tức thời trang
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="./tintuctonghop.html">Tin tức tổng hợp</a></li>
+                            <li><a href="">Tin tức khuyến mại</a></li>
+                            <li><a href="./chamsockhachhang.html">Chăm sóc khách hàng</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">
+                            <img width="20" height="20" src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/code_dis.gif?1724310613023" alt="">
+                            <font color="#a72020">Khuyến mãi</font>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="l-2 m-6">
+                    <div class="nav__c">
+                    <ul class="nav__c--list">
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Yêu thích
+                            </div>
+                            <div class="so-icon">
+                            0
+                            </div>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Tài khoản
+                            </div>
+                            <ul class="taikhoan">
+                            <li>
+                                <a href="./dangnhap.html">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                Đăng nhập
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./dangky.html">
+                                <i class="fa-regular fa-user"></i>
+                                Đăng ký
+                                </a>
+                            </li>
+                            </ul>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-duotone fa-solid fa-bag-shopping"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Giỏ hàng
+                            </div>
+                            <div class="so-icon">
+                            5
+                            </div>  
+                            <!-- <div class="thongtingio">
+                            <img width="90" height="90" alt="" class="hCL kVc L4E MIw N7A XiG" fetchpriority="high" loading="auto" src="https://i.pinimg.com/originals/9b/9a/38/9b9a386b0164060b63afb63c1d528263.gif" style="object-fit: contain;">
+                            <p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                            </div> -->
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trangchu-a -->
+    <div class="trangchu-den">
+        <div class="grid wide">
+            <div class="row">
+                <div class="den">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li><span>Sản Phẩm Mới Rubies Rubies</span></li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li><div class="chu">Áo Khoác Blazer Nữ Sanae Cropsuit RR24KB09</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <div class="product-image-section">
+            <img src="https://bizweb.dktcdn.net/100/462/587/products/40-5fb055fc-89fe-43be-b3ac-209d348ea0af.png?v=1730015465910" alt="Áo Khoác Blazer Nữ Sanae Cropsuit" class="main-image">
+            <div class="thumbnail-container">
+                <button class="arrow arrow-left">&#8249;</button>
+                <img src="//bizweb.dktcdn.net/thumb/medium/100/462/587/products/40-5fb055fc-89fe-43be-b3ac-209d348ea0af.png?v=1730015465910" alt="Thumbnail 1" class="thumbnail">
+                <img src="//bizweb.dktcdn.net/thumb/medium/100/462/587/products/39-524a006a-7d63-41a4-ab4b-a7cdffd3208d.png?v=1730015468237" alt="Thumbnail 2" class="thumbnail">
+                <img src="//bizweb.dktcdn.net/thumb/medium/100/462/587/products/37-e1193a36-a55b-491b-821b-47d0428bfcbb.png?v=1730015468237" alt="Thumbnail 3" class="thumbnail">
+                <img src="//bizweb.dktcdn.net/thumb/medium/100/462/587/products/38-a6b70413-44a8-4421-8846-e216bde0bcaf.png?v=1730015468237" alt="Thumbnail 4" class="thumbnail">
+                <button class="arrow arrow-right">&#8250;</button>
+            </div>
+        </div>
+        <div class="product-info-section">
+            <h1>Áo Khoác Blazer Nữ Sanae Cropsuit RR24KB09</h1>
+            <p class="product-code">Mã: RR24KB09-S-DE</p>
+            <p class="product-brand">Thương hiệu: Rubies Rubies</p>
+            <p class="product-status">Tình trạng: Còn hàng</p>
+            
+            <div class="product-price">
+                <span class="sale-price">690.000đ</span>
+                <!-- <span class="original-price">450.000đ</span> -->
+            </div>
+            
+            <p class="product-description">Mô tả đang cập nhật</p>
+            
+            <div class="product-options">
+                <div class="size-selection">
+                    <p>Kích thước:</p>
+                    <button class="size-button active">S</button>
+                    <button class="size-button">M</button>
+                    <button class="size-button">L</button>
+                </div>
+                
+                <div class="color-selection">
+                    <p>Màu sắc:</p>
+                    <span class="color black active"></span>
+                    <span class="color white"></span>
+                </div>
+            </div>
+            
+            <div class="additional-links">
+                <a href="#" class="view-related-products">
+                    <i class="zoom-icon">🔍</i> Sản phẩm đi kèm
+                </a>
+                <div class="actions">
+                    <button class="favorite">❤️</button>
+                    <button class="share">🔗</button>
+                </div>
+            </div>
+            <h3>Chọn Số Lượng Sản Phẩm</h3>
+    
+            <div class="quantity-container">
+                <button class="quantity-button">-</button>
+                <input type="number" class="quantity-input" id="quantityInput" value="1" min="1">
+                <button class="quantity-button">+</button>
+            </div>
+    
+            <button class="add-to-cart-button" >Thêm vào giỏ hàng</button>
+    
+        </div>
+    </div>
+</body>
+</html>

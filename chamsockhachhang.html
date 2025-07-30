@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://bizweb.dktcdn.net/100/462/587/themes/880841/assets/favicon.png?1724310613023" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web//fontawesome-free-6.6.0-web/css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/Dinhdang.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/Reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Chăm sóc khách hàng</title>
+    <style>
+
+        .app {
+            overflow: hidden;
+        }
+
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+            margin-top: 75px;
+        }
+
+        .info {
+            flex: 1;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .info h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .info p {
+            margin: 5px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .info p span {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form input,
+        .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background-color: #333;
+        }
+
+        .map {
+            flex: 1;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+
+
+        <div class="header">
+            <div class="grid wide">
+              <div class="row">
+                  <div class="l-2 m-6 logo--center">
+                    <div class="logo__img">
+                      <a href="#">
+                        <img src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" class="logo__img" data-src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" alt="Thời Trang Nữ RUBIES" class="lazyload loaded" data-was-processed="true" title="Thời trang nữ RUBIES">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="l-8 m-0 header-top">
+                      <div class="nav__a">
+                        <ul class="nav__a--list">
+                          <li class="nav__a--item">
+                            <i class="fa-solid fa-phone"></i>
+                            Hotline:
+                            <div class="khoi-hotline">
+                              070 347 0938
+                              <a href="tel:+0703470938" class="hotline-number">Gọi: 070 347 0938</a>
+                            </div>
+                          </li>
+                          <li class="nav__a--item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#">
+                              Hệ thống cửa hàng
+                            </a>                   
+                          </li>
+                          <li class="nav__a--item">
+                            <div class="search-container">
+                              <input type="text" class="search-input" placeholder="Tìm sản phẩm..." title="Vui lòng điền vào trường này.">
+                              <button class="search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                              </button>
+                          </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="nav__b">
+                        <ul class="nav__b--list">
+                          <li class="nav__b--item"><a href="./index.html">Trang chủ</a></li>
+                          <li class="nav__b--item">
+                            <a href="">Thời trang nữ</a>
+                            <i class="fa-solid fa-caret-down"></i>
+                            <ul class="subnav">
+                              <li><a href="">Váy</a></li>
+                              <li><a href="">Áo nữ</a></li>
+                              <li><a href="">Quần nữ</a></li>
+                              <li><a href="">Set đồ nữ</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav__b--item">
+                            <a href="">Bộ sưu tập</a>
+                            <i class="fa-solid fa-caret-down"></i>
+                            <ul class="subnav">
+                              <li><a href="">KNITWEAR</a></li>
+                              <li><a href="">BST Tết 2024</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav__b--item">
+                            <a href="#">
+                              Tin tức thời trang
+                              <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="subnav">
+                              <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                              <li><a href="./tintuctonghop.html">Tin tức tổng hợp</a></li>
+                              <li><a href="">Tin tức khuyến mại</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav__b--item">
+                            <a href="">
+                              <img width="20" height="20" src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/code_dis.gif?1724310613023" alt="">
+                              <font color="#a72020">Khuyến mãi</font>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="l-2 m-6">
+                      <div class="nav__c">
+                        <ul class="nav__c--list">
+                          <li class="l-4 nav__c--item">
+                            <a href="#">
+                              <div class="khoi-icon">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                              <div class="l-12 m-0 chu-icon ">
+                                Yêu thích
+                              </div>
+                              <div class="so-icon">
+                                0
+                              </div>
+                            </a>
+                          </li>
+                          <li class="l-4 nav__c--item">
+                            <a href="#">
+                              <div class="khoi-icon">
+                                <i class="fa-regular fa-user"></i>
+                              </div>
+                              <div class="l-12 m-0 chu-icon ">
+                                Tài khoản
+                              </div>
+                              <ul class="taikhoan">
+                                <li>
+                                  <a href="./dangnhap.html">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    Đăng nhập
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="./dangky.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    Đăng ký
+                                  </a>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="l-4 nav__c--item">
+                            <a href="./category.html">
+                              <div class="khoi-icon">
+                                <i class="fa-duotone fa-solid fa-bag-shopping"></i>
+                              </div>
+                              <div class="l-12 m-0 chu-icon ">
+                                Giỏ hàng
+                              </div>
+                              <div class="so-icon">
+                                0
+                              </div>  
+                              <div class="thongtingio">
+                                <img width="80" height="80" alt="" class="hCL kVc L4E MIw N7A XiG" fetchpriority="high" loading="auto" src="https://i.pinimg.com/originals/3d/64/c5/3d64c579b82fc03d88cc3ff6da031c9c.gif" style="object-fit: contain;">
+                                <p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Thông tin và form -->
+            <div class="info">
+                <h2>Ý KIẾN CỦA BẠN VỀ RUBIES</h2>
+                <p><strong>MST:</strong> <span>0314839029</span></p>
+                <p><strong>Địa chỉ:</strong> 47 - 49 Trần Quang Diệu, Phường 14, Quận 3, TP. HCM</p>
+                <p><strong>Hotline:</strong> <span>070 347 0938</span></p>
+                <p><strong>Email:</strong> rubiesin2015@gmail.com</p>
+                <div class="form">
+                    <input type="text" placeholder="Họ và tên">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Điện thoại">
+                    <textarea rows="4" placeholder="Nội dung"></textarea>
+                    <button>Gửi thông tin</button>
+                </div>
+            </div>
+            <!-- Bản đồ -->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.487696187025!2d106.67662381526038!3d10.778526892319851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4192435575%3A0x547d5a305fd6b2f5!2zNDcgxJAuIFRy4bqnbiBRdWFuZyBEaeG7h3UsIFBoxrDhu51uZyAxNCwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBIw7MgQ2jDrSBN4buBbmgg!5e0!3m2!1sen!2s!4v1699894931345!5m2!1sen!2s"
+                    allowfullscreen="">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="top-footer">
+              <div class="tt-footer">
+                <div class="grid wide">
+                  <div class="row">
+                    <div class="l-4 m-6">
+                      <h2>CÔNG TY TNHH RUBIES</h2>
+                      <ul>
+                        <li>MST: 0314839029</li>
+                        <li>49-47 Trần Quang Diệu,Quận 3, TP.HCM</li>
+                        <li>Điện thoại: <a href="" title="070 347 0938">070 347 0938</a></li>
+                        <li>Email: <a href="mailto:rubiesin2015@gmail.com" title="rubies2015@gmail.com">rubiesin2015@gmail.com</a></li>
+                        <li class="icon-footer">
+                          <a href="https://www.facebook.com/rubiesin2015" title="Theo dõi thời trang RUBIES trên Facebook"><i class="fa-brands fa-facebook"></i></a>
+                          <a href="https://www.instagram.com/rubies.sg/"title="Theo dõi thời trang RUBIES trên Instagram"><i class="fa-brands fa-instagram"></i></a>
+                          <a href="https://www.youtube.com/channel/UCALOExnNJaJG9YS9lvTnhsg" title="Theo dõi thời trang RUBIES trên Youtube"><i class="fa-brands fa-youtube"></i></a>
+                          <a href="https://www.tiktok.com/@rubiesin2015" title="Theo dõi thời trang RUBIES trên Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="l-2 m-6">
+                      <h2>CÔNG TY</h2>
+                      <ul class="cty">
+                        <li><a href="">RUBIES RUBIES</a></li>
+                        <li><a href="">Tuyển dụng & việc làm</a></li>
+                        <li><a href="">Tin tức thời trang</a></li>
+                        <li><a href="">Chăm sóc khách hàng</a></li>
+                      </ul>
+                    </div>
+                    <div class="l-3 m-6">
+                      <h2>CHÍNH SÁCH KHÁCH HÀNG</h2>
+                      <ul class="cty">
+                        <li><a href="">Chính sách khách hàng thân thiết</a></li>
+                        <li><a href="">Chính sách đổi và trả hàng</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Hướng dẫn sử dụng</a></li>
+                        <li><a href="">Các câu hỏi thường gặp</a></li>
+                      </ul>
+                    </div>
+                    <div class="l-3 m-6">
+                      <h2>THÔNG TIN CỬA HÀNG</h2>
+                      <ul>
+                        <li>CỬA HÀNG SỐ 5</li>
+                        <li>09 Thái Phiên, P.Lê Đại Hành, Q.Hai Bà Trưng, Hà Nội</li>
+                        <li><a href="">Xem tất cả cửa hàng</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttom-footer">
+              <marquee behavior="" direction="right"><h3>Nguyễn Thị Hiền - 522100022</h3></marquee>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBIES - Giỏ hàng</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/Dinhdang.css" type="text/css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web//fontawesome-free-6.6.0-web/css/all.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .trangchu-den {
+            background-color: rgba(138, 135, 135, 0.1);
+            height: 54px;
+            justify-content: center;
+            position: relative;
+            top:80px;
+        }
+
+        .den {
+            justify-content: center;
+            display: flex;
+            height: 54px;
+            padding: 15px 0px;
+            font-size: 14px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .trangchu-den ul {
+            display: flex;
+        }
+
+        .trangchu-den ul li{
+            padding-right: 10px;
+        }
+
+        .chu{
+            color: #881b1b;
+        }
+
+        .title_cart {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background: #f7f8f9;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            position: relative;
+            top: 100px;
+        }
+
+        .thongtinsanpham{
+            position: absolute;
+            top: 120px;
+        }
+        .cart-header-info {
+            display: flex;
+            padding: 7px 0;
+            border: solid 1px #ebebeb;
+            border-bottom: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 10px 10px 0px 0px;
+            position: relative;
+            top: 120px;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .cart_body {
+            border: solid 1px #ebebeb;
+            border-radius: 0px 0px 10px 10px;
+            position: relative;
+            top: 120px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .cart_body .cart_image {
+            width: 73.56px;
+            height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cart_name {
+            width: 100%;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 10px;
+            font-size: 13px;
+        }
+
+        .cart_body .grid {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            font-size: 16px;
+        }
+
+        .chu {
+            color: #e8002d;
+            font-weight: bold;
+        }
+
+        .cart{
+            display: flex;
+        }
+
+        .bo{
+            display: flex;
+            align-items: center;
+            width: 60%;
+        }
+        .so{
+            border: solid 1px #ebebeb;
+            align-items: center;
+            display: flex;
+            width: 30px;
+            justify-content: center;
+        }
+        .khoi{
+            display: flex;
+            padding: 10px;
+            border-bottom: solid 1px #ebebeb;
+        }
+        .khoicuoi{
+            display: flex;
+            padding: 10px;
+        }
+        .tongtien{
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .thongtinsp .thanhtoan {
+            margin-top: 20px;
+            display: flex;
+            position: relative;
+            top: 120px;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .sotien{
+            display: flex;
+        }
+        .tien {
+            position: absolute;
+            right: 10%;
+            color: #e8002d;
+            font-weight: bold;
+        }
+        .chung input{
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            background: #000;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .chung input:hover{
+            background: #f7f8f9;
+            color: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="grid wide">
+            <div class="row">
+                <div class="l-2 m-6 logo--center">
+                <div class="logo__img">
+                    <a href="#">
+                    <img src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" class="logo__img" data-src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" alt="Thời Trang Nữ RUBIES" class="lazyload loaded" data-was-processed="true" title="Thời trang nữ RUBIES">
+                    </a>
+                </div>
+                </div>
+                <div class="l-8 m-0 header-top">
+                    <div class="nav__a">
+                    <ul class="nav__a--list">
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-phone"></i>
+                        Hotline:
+                        <div class="khoi-hotline">
+                            070 347 0938
+                            <a href="tel:+0703470938" class="hotline-number">Gọi: 070 347 0938</a>
+                        </div>
+                        </li>
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">
+                            Hệ thống cửa hàng
+                        </a>                   
+                        </li>
+                        <li class="nav__a--item">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Tìm sản phẩm..." title="Vui lòng điền vào trường này.">
+                            <button class="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="nav__b">
+                    <ul class="nav__b--list">
+                        <li class="nav__b--item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="nav__b--item">
+                        <a href="">Thời trang nữ</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">Váy</a></li>
+                            <li><a href="">Áo nữ</a></li>
+                            <li><a href="">Quần nữ</a></li>
+                            <li><a href="">Set đồ nữ</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">Bộ sưu tập</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">KNITWEAR</a></li>
+                            <li><a href="">BST Tết 2024</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="#">
+                            Tin tức thời trang
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="./tintuctonghop.html">Tin tức tổng hợp</a></li>
+                            <li><a href="">Tin tức khuyến mại</a></li>
+                            <li><a href="./chamsockhachhang.html">Chăm sóc khách hàng</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">
+                            <img width="20" height="20" src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/code_dis.gif?1724310613023" alt="">
+                            <font color="#a72020">Khuyến mãi</font>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="l-2 m-6">
+                    <div class="nav__c">
+                    <ul class="nav__c--list">
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Yêu thích
+                            </div>
+                            <div class="so-icon">
+                            0
+                            </div>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Tài khoản
+                            </div>
+                            <ul class="taikhoan">
+                            <li>
+                                <a href="./dangnhap.html">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                Đăng nhập
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./dangky.html">
+                                <i class="fa-regular fa-user"></i>
+                                Đăng ký
+                                </a>
+                            </li>
+                            </ul>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-duotone fa-solid fa-bag-shopping"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Giỏ hàng
+                            </div>
+                            <div class="so-icon">
+                            5
+                            </div>  
+                            <!-- <div class="thongtingio">
+                            <img width="90" height="90" alt="" class="hCL kVc L4E MIw N7A XiG" fetchpriority="high" loading="auto" src="https://i.pinimg.com/originals/9b/9a/38/9b9a386b0164060b63afb63c1d528263.gif" style="object-fit: contain;">
+                            <p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                            </div> -->
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trangchu-a -->
+    <div class="trangchu-den">
+        <div class="grid wide">
+            <div class="row">
+                <div class="den">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li><div class="chu">Giỏ hàng</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- giohangcuaban -->
+    <div class="title_block">
+        <div class="grid wide">
+            <div class="title_cart">
+            Giỏ hàng của bạn
+            </div>
+        </div>
+    </div>
+
+    <!-- thongtinsanpham -->
+    <div class="thongtinsp">
+        <div class="grid wide">
+            <div class="cart-header-info">
+                <div class="l-6">Thông tin sản phẩm</div>
+                <div class="l-2">Đơn giá</div>
+                <div class="l-2">Số lượng</div>
+                <div class="l-2">Thành tiền</div>
+            </div>
+            <div class="cart_body">
+                <div class="khoi">
+                    <div class="bo">
+                        <a href="">
+                            <img src="https://bizweb.dktcdn.net/100/462/587/products/7-112a83a0-cf17-4b86-9876-eb996e36c344.png?v=1731145137887" alt="" class="cart_image">
+                        </a>
+                        <div class="cart_infor">
+                            <div class="cart_name">
+                                <a href="">Áo Khoác Kiểu Nữ Wana Outer RR24KK11</a> 
+                                <div>S / Nâu nhạt</div> 
+                                <div>Xóa</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="grid chu">720.000đ</div>
+                    <div class="grid">
+                        <div class="so">-</div>
+                        <div class="so">1</div>
+                        <div class="so">+</div>
+                    </div>
+                    <div class="grid chu">720.000đ</div>
+                </div>
+                
+                <div class="khoi">
+                    <div class="bo">
+                        <a href="">
+                            <img src="https://bizweb.dktcdn.net/100/462/587/products/40-5fb055fc-89fe-43be-b3ac-209d348ea0af.png?v=1730015465910" alt="" class="cart_image">
+                        </a>
+                        <div class="cart_infor">
+                            <div class="cart_name">
+                                <a href="">Áo Khoác Blazer Nữ Sanae Cropsuit RR24KB09</a> 
+                                <div>S / Đen</div> 
+                                <div>Xóa</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="grid chu">690.000đ</div>
+                    <div class="grid">
+                        <div class="so">-</div>
+                        <div class="so">1</div>
+                        <div class="so">+</div>
+                    </div>
+                    <div class="grid chu">690.000đ</div>
+                </div>
+
+                <div class="khoi">
+                    <div class="bo">
+                        <a href="">
+                            <img src="https://bizweb.dktcdn.net/100/462/587/products/26-d0e5ee7f-7f91-4096-ad00-9db4add59e0b.png?v=1729412408873" alt="" class="cart_image">
+                        </a>
+                        <div class="cart_infor">
+                            <div class="cart_name">
+                                <a href="">Áo Sơ Mi Nữ Sohee Shirt RR24AS32</a> 
+                                <div>S / Trắng</div> 
+                                <div>Xóa</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="grid chu">420.000đ</div>
+                    <div class="grid">
+                        <div class="so">-</div>
+                        <div class="so">1</div>
+                        <div class="so">+</div>
+                    </div>
+                    <div class="grid chu">420.000đ</div>
+                </div>
+
+                <div class="khoi">
+                    <div class="bo">
+                        <a href="">
+                            <img src="https://bizweb.dktcdn.net/100/462/587/products/17-ef228fcd-43f4-4180-b49c-83dff686f82c.png?v=1728634904460" alt="" class="cart_image">
+                        </a>
+                        <div class="cart_infor">
+                            <div class="cart_name">
+                                <a href="">Áo Sơ Mi Nữ Maven Shirt RR24AS31</a> 
+                                <div>S / Dương Sọc</div> 
+                                <div>Xóa</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="grid chu">400.000đ</div>
+                    <div class="grid">
+                        <div class="so">-</div>
+                        <div class="so">1</div>
+                        <div class="so">+</div>
+                    </div>
+                    <div class="grid chu">400.000đ</div>
+                </div>
+
+                <div class="khoicuoi">
+                    <div class="bo">
+                        <a href="">
+                            <img src="https://bizweb.dktcdn.net/100/462/587/products/mona-shirt-802cea01-ff6c-4876-a5fb-35ec2d93e713.png?v=1731323186003" alt="" class="cart_image">
+                        </a>
+                        <div class="cart_infor">
+                            <div class="cart_name">
+                                <a href="">Áo Khoác Kiểu Nữ Ellen Outer RR24KK12</a> 
+                                <div>S / Đen</div> 
+                                <div>Xóa</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid chu">730.000đ</div>
+                    <div class="grid">
+                        <div class="so">-</div>
+                        <div class="so">1</div>
+                        <div class="so">+</div>
+                    </div>
+                    <div class="grid chu">730.000đ</div>
+                </div>
+            </div>
+            <div class="thanhtoan">
+                <div class="l-8"><a href="./index.html">Tiếp tục mua hàng</a></div>
+                <div class="l-4 chung">
+                    <div class="sotien">
+                        <div class="tongtien">Tổng tiền:</div>
+                        <div class="tien">2.960.000đ</div> 
+                    </div>
+                    <input type="button" value="Thanh toán">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

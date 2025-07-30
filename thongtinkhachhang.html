@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBIES - Thông tin khách hàng</title>
+    <link rel="shortcut icon" href="https://bizweb.dktcdn.net/100/462/587/themes/880841/assets/favicon.png?1724310613023" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web//fontawesome-free-6.6.0-web/css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/Dinhdang.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/Reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .trangchu-den {
+            background-color: rgba(138, 135, 135, 0.1);
+            height: 54px;
+            justify-content: center;
+            position: relative;
+            top:80px;
+        }
+
+        .den {
+            justify-content: center;
+            display: flex;
+            height: 54px;
+            padding: 15px 0px;
+            font-size: 14px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .trangchu-den ul {
+            display: flex;
+        }
+
+        .trangchu-den ul li{
+            padding-right: 10px;
+        }
+
+        .chu{
+            color: #881b1b;
+        }
+
+        .khoi {
+            display: flex;
+            position: relative;
+            top: 100px;
+            background-color: #fff;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            box-shadow: 0px 1px 69.16px 6.84px rgba(20, 64, 51, 0.05);
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 40px;
+            width: 500px;
+            font-size: 16px;
+        }
+
+        .dangnhap {
+            font-size: 3rem;
+            text-align: center;
+            padding: 20px 20px;
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .dangnhap a:after {
+            content: "";
+            width: 150px;
+            height: 6px;
+            background: #e5e9ed;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        .chutext{
+            padding: 0 10px;
+            font-size: 16px;
+        }
+
+        .input-nut input{
+            width: 100%; 
+            padding: 10px 20px; 
+            margin: 8px 0px; 
+            box-sizing: border-box;
+            font-size: 16px;
+            display: flex;
+        }   
+
+        .kieu1{
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .dangnhapbang{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .fb a{
+            display: flex;
+            background: #3b5998;
+            color: #fff;
+            font-size: 16px;
+            width: 130px;
+            margin-right: 20px;
+            padding: 0px 10px;
+            align-items: center;
+            height: 37px;
+        }
+
+        .gg a{
+            display: flex;
+            background: #e14b33;
+            color: #fff;
+            font-size: 16px;
+            width: 130px;
+            margin-right: 20px;
+            padding: 0px 10px;
+            align-items: center;
+            height: 37px;
+        }
+
+        .kieu2{
+            padding: 0 7px;
+        }
+
+        .form ul li:hover a{
+            color: #881b1b;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="grid wide">
+            <div class="row">
+                <div class="l-2 m-6 logo--center">
+                <div class="logo__img">
+                    <a href="#">
+                    <img src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" class="logo__img" data-src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" alt="Thời Trang Nữ RUBIES" class="lazyload loaded" data-was-processed="true" title="Thời trang nữ RUBIES">
+                    </a>
+                </div>
+                </div>
+                <div class="l-8 m-0 header-top">
+                    <div class="nav__a">
+                    <ul class="nav__a--list">
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-phone"></i>
+                        Hotline:
+                        <div class="khoi-hotline">
+                            070 347 0938
+                            <a href="tel:+0703470938" class="hotline-number">Gọi: 070 347 0938</a>
+                        </div>
+                        </li>
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">
+                            Hệ thống cửa hàng
+                        </a>                   
+                        </li>
+                        <li class="nav__a--item">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Tìm sản phẩm..." title="Vui lòng điền vào trường này.">
+                            <button class="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="nav__b">
+                    <ul class="nav__b--list">
+                        <li class="nav__b--item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="nav__b--item">
+                        <a href="">Thời trang nữ</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">Váy</a></li>
+                            <li><a href="">Áo nữ</a></li>
+                            <li><a href="">Quần nữ</a></li>
+                            <li><a href="">Set đồ nữ</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">Bộ sưu tập</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">KNITWEAR</a></li>
+                            <li><a href="">BST Tết 2024</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="#">
+                            Tin tức thời trang
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="./tintuctonghop.html">Tin tức tổng hợp</a></li>
+                            <li><a href="">Tin tức khuyến mại</a></li>
+                            <li><a href="./chamsockhachhang.html">Chăm sóc khách hàng</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">
+                            <img width="20" height="20" src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/code_dis.gif?1724310613023" alt="">
+                            <font color="#a72020">Khuyến mãi</font>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="l-2 m-6">
+                    <div class="nav__c">
+                    <ul class="nav__c--list">
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Yêu thích
+                            </div>
+                            <div class="so-icon">
+                            0
+                            </div>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Tài khoản
+                            </div>
+                            <ul class="taikhoan">
+                            <li>
+                                <a href="./dangnhap.html">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                Đăng nhập
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./dangky.html">
+                                <i class="fa-regular fa-user"></i>
+                                Đăng ký
+                                </a>
+                            </li>
+                            </ul>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-duotone fa-solid fa-bag-shopping"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Giỏ hàng
+                            </div>
+                            <div class="so-icon">
+                            0
+                            </div>  
+                            <div class="thongtingio">
+                            <img width="90" height="90" alt="" class="hCL kVc L4E MIw N7A XiG" fetchpriority="high" loading="auto" src="https://i.pinimg.com/originals/9b/9a/38/9b9a386b0164060b63afb63c1d528263.gif" style="object-fit: contain;">
+                            <p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trangchu-a -->
+    <div class="trangchu-den">
+        <div class="grid wide">
+            <div class="row">
+                <div class="den">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li><div class="chu">Đăng nhập tài khoản</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- form dang ky -->
+    <div class="khoi">
+        <div class="form">
+            <div class="dangnhap">
+                <a href="">Thông tin khách hàng</a>
+            </div>
+            <form name="thongtinkhachhang" method="post" action="">
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Họ tên:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Ngày sinh:</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu:</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ:</td>
+                        <td><textarea name="" id=""></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Hộ khẩu:</td>
+                        <td><textarea name="" id="" cols="30" rows="4"> Số nhà ...</textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính:</td>
+                        <td>
+                            <input type="radio" name="gioitinh" value="nu" checked>Nữ
+                            <input type="radio" name="gioitinh" value="nam">Nam
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sở thích:</td>
+                        <td>
+                            <input type="checkbox" name="dulich" value="Du lich" checked> Du lịch
+                            <input type="checkbox" name="thethao" value="The thao"> Thể thao
+                            <input type="checkbox" name="muasam" value="Mua sam"> Mua sắm
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chọn ảnh:</td>
+                        <td> <input type="file" name="anh"></td>
+                    </tr>
+                    <tr>
+                        <td>Nghề nghiệp:</td>
+                        <td>
+                            <select name="nghe" size="3">
+                            <option value="Giao vien"> Giáo viên</option>
+                            <option value="Sinh vien" selected> Sinh viên</option>
+                            <option value="Hoc sinh"> Học sinh</option>
+                            <option value="Khac"> Khác</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="input-nut">
+                    <input type="submit" name="gui" value="Gửi thông tin">
+                    <input type="reset" name="nhaplai" value="Nhập lại">
+                </div>
+            </form>         
+        </div>
+     </div>
+    
+
+</body>
+</html>

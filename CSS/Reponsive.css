@@ -1,0 +1,38 @@
+@media(min-width: 1024x) {
+    .maytinh {
+        display: block;
+    }
+    .maytinhbang {
+        display: none;
+    }
+    .dienthoai {
+        display: none;
+    }
+}
+
+@media(min-width: 744x) and (max-width: 1023px) {
+    .maytinh {
+        display: none;
+    }
+    .maytinhbang {
+        display: block;
+    }
+    .dienthoai {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 743px) {
+    .maytinh {
+        display: none;
+    }
+    .maytinhbang {
+        display: none;
+    }
+    .dienthoai {
+        display: block;
+    }
+    
+}

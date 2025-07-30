@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBIES - Tin tức tổng hợp</title>
+    <link rel="shortcut icon" href="https://bizweb.dktcdn.net/100/462/587/themes/880841/assets/favicon.png?1724310613023" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web//fontawesome-free-6.6.0-web/css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/Dinhdang.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/Reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .danhsach ul{
+            list-style: disc;
+        }
+
+        .chu{
+            color: #881b1b;
+        }
+
+        .video {
+            /* text-align: center; */
+            margin: 15px 35px;
+        }
+        @media(min-width: 1024px) {
+            .trangchu-den {
+                background-color: rgba(138, 135, 135, 0.1);
+                height: 54px;
+                justify-content: center;
+                position: relative;
+                margin-bottom: 35px;
+                font-size: 16px;
+            }
+
+            .den {
+                display: flex;
+                height: 54px;
+                align-items: center;
+                text-align: center;
+                left: 50px;
+            }
+
+            .trangchu-den ul {
+                display: flex;
+            }
+
+            .trangchu-den ul li{
+                padding-right: 10px;
+            }
+
+       
+            .kieu1{
+                color: #881b1b;
+            }
+
+            .danhsach {
+                position: relative;
+                /* top: 80px; */
+                font-size: 16px;
+                margin: 15px 35px;
+            }
+            .maytinh {
+                display: block;
+            }
+            .maytinhbang {
+                display: none;
+            }
+            .dienthoai {
+                display: none;
+            }
+        }
+
+        @media(min-width: 744px) and (max-width: 1023px) {
+            .trangchu-den {
+                background-color: rgba(138, 135, 135, 0.1);
+                height: 54px;
+                justify-content: center;
+                position: relative;
+                margin-bottom: 35px;
+                font-size: 16px;
+            }
+
+            .den {
+                display: flex;
+                height: 54px;
+                align-items: center;
+                text-align: center;
+                left: 50px;
+            }
+
+            .trangchu-den ul {
+                display: flex;
+            }
+
+            .trangchu-den ul li{
+                padding-right: 10px;
+            }
+            
+            .kieu1 {
+                color: aqua;
+            }
+
+            .danhsach {
+                position: relative;
+                /* top: 80px; */
+                font-size: 16px;
+                margin: 15px 35px;
+            }
+            .maytinh {
+                display: none;
+            }
+            .maytinhbang {
+                display: block;
+            }
+            .dienthoai {
+                display: none;
+            }
+        }
+
+        @media(max-width: 743px) {
+            .trangchu-den {
+                background-color: rgba(138, 135, 135, 0.1);
+                height: 54px;
+                justify-content: center;
+                position: relative;
+                margin-bottom: 35px;
+                font-size: 16px;
+            }
+
+            .den {
+                font-size: 14px;
+                padding-left: 30px;
+                display: flex;
+                height: 54px;
+                align-items: center;
+                text-align: center;
+                left: 50px;
+            }
+
+            .trangchu-den ul {
+                display: flex;
+            }
+
+            .trangchu-den ul li{
+                padding-right: 10px;
+            }
+          
+            .kieu1 {
+                color: palevioletred;
+            }
+
+            .danhsach {
+                position: relative;
+                /* top: 80px; */
+                font-size: 16px;
+                margin: 15px 35px;
+            }
+
+            .kieu2 {
+                text-align: justify;
+            }
+            .maytinh {
+                display: none;
+            }
+            .maytinhbang {
+                display: none;
+            }
+            .dienthoai {
+                display: block;
+            }
+    }
+
+    </style>
+</head>
+<body>
+    <!-- header
+    <div class="header">
+        <div class="grid wide">
+            <div class="row">
+                <div class="l-2 m-6 logo--center">
+                <div class="logo__img">
+                    <a href="#">
+                    <img src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" class="logo__img" data-src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/logo.png?1724310613023" alt="Thời Trang Nữ RUBIES" class="lazyload loaded" data-was-processed="true" title="Thời trang nữ RUBIES">
+                    </a>
+                </div>
+                </div>
+                <div class="l-8 m-0 header-top">
+                    <div class="nav__a">
+                    <ul class="nav__a--list">
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-phone"></i>
+                        Hotline:
+                        <div class="khoi-hotline">
+                            070 347 0938
+                            <a href="tel:+0703470938" class="hotline-number">Gọi: 070 347 0938</a>
+                        </div>
+                        </li>
+                        <li class="nav__a--item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">
+                            Hệ thống cửa hàng
+                        </a>                   
+                        </li>
+                        <li class="nav__a--item">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Tìm sản phẩm..." title="Vui lòng điền vào trường này.">
+                            <button class="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="nav__b">
+                    <ul class="nav__b--list">
+                        <li class="nav__b--item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="nav__b--item">
+                        <a href="">Thời trang nữ</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">Váy</a></li>
+                            <li><a href="">Áo nữ</a></li>
+                            <li><a href="">Quần nữ</a></li>
+                            <li><a href="">Set đồ nữ</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">Bộ sưu tập</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="subnav">
+                            <li><a href="">KNITWEAR</a></li>
+                            <li><a href="">BST Tết 2024</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="#">
+                            Tin tức thời trang
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="./tintuctonghop.html">Tin tức tổng hợp</a></li>
+                            <li><a href="">Tin tức khuyến mại</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav__b--item">
+                        <a href="">
+                            <img width="20" height="20" src="//bizweb.dktcdn.net/100/462/587/themes/880841/assets/code_dis.gif?1724310613023" alt="">
+                            <font color="#a72020">Khuyến mãi</font>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="l-2 m-6">
+                    <div class="nav__c">
+                    <ul class="nav__c--list">
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Yêu thích
+                            </div>
+                            <div class="so-icon">
+                            0
+                            </div>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Tài khoản
+                            </div>
+                            <ul class="taikhoan">
+                            <li>
+                                <a href="./dangnhap.html">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                Đăng nhập
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./dangky.html">
+                                <i class="fa-regular fa-user"></i>
+                                Đăng ký
+                                </a>
+                            </li>
+                            </ul>
+                        </a>
+                        </li>
+                        <li class="l-4 nav__c--item">
+                        <a href="#">
+                            <div class="khoi-icon">
+                            <i class="fa-duotone fa-solid fa-bag-shopping"></i>
+                            </div>
+                            <div class="l-12 m-0 chu-icon ">
+                            Giỏ hàng
+                            </div>
+                            <div class="so-icon">
+                            0
+                            </div>  
+                            <div class="thongtingio">
+                            <img width="90" height="90" alt="" class="hCL kVc L4E MIw N7A XiG" fetchpriority="high" loading="auto" src="https://i.pinimg.com/originals/9b/9a/38/9b9a386b0164060b63afb63c1d528263.gif" style="object-fit: contain;">
+                            <p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- trangchu-a -->
+    <div class="maytinh">
+        <div class="trangchu-den">
+             <div class="grid wide">
+                 <div class="row">
+                     <div class="den">
+                         <ul>
+                             <li><a href="./index.html">Trang chủ</a></li>
+                             <li><i class="fa-solid fa-angle-right"></i></li>
+                             <li><span>Tin tức thời trang</span></li>
+                             <li><i class="fa-solid fa-angle-right"></i></li>
+                             <li><div class="chu">Tin tức tổng hợp</div></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <div class="maytinhbang">
+        <div class="trangchu-den">
+             <div class="grid wide">
+                 <div class="row">
+                     <div class="den">
+                         <ul>
+                             <li><a href="./index.html">Trang chủ</a></li>
+                             <li><i class="fa-solid fa-angle-right"></i></li>
+                             <li><span>Tin tức thời trang</span></li>
+                             <li><i class="fa-solid fa-angle-right"></i></li>
+                             <li><div class="chu">Tin tức tổng hợp</div></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <div class="dienthoai">
+        <div class="trangchu-den">
+             <div class="grid wide">
+                 <div class="row">
+                     <div class="den">
+                         <ul>
+                             <li><a href="./index.html">Trang chủ</a></li>
+                             <li><i class="fa-solid fa-angle-right"></i></li>
+                             <li><span>Tin tức thời trang</span></li>
+                             <li><i class="fa-solid fa-angle-right"></i></li>
+                             <li><div class="chu">Tin tức tổng hợp</div></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+
+    <!-- danhsach -->
+     <div class="maytinh">
+         <div class="danhsach">
+             <h3 class="chu">Phụ kiện thời trang nữ</h3>
+             <div class="">
+                 <ol type="1">
+                     <li>
+                         Túi xách
+                         <ul>
+                             <li>Túi đeo chéo</li>
+                             <li>Túi tote</li>
+                             <li>Túi cầm tay</li>
+                         </ul>
+                     </li>
+                     <li>
+                         Dây chuyền
+                         <ul>
+                             <li>Dây chuyền bạc</li>
+                             <li>Dây chuyền vàng</li>
+                         </ul>
+                     </li>
+                     <li>
+                         Nhẫn
+                         <ol type="i" start="2">
+                             <li>Nhẫn vàng</li>
+                             <li>Nhẫn kim cương</li>
+                         </ol>
+                     </li>
+                     <li>Lắc tay</li>
+                     <li>Bông tai</li>
+                 </ol>
+             </div>
+         </div>
+         <!--video  -->
+         <div class="video">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/cdkSV-mBg0s?si=m4EAxa_LeVaPGqqf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+     </div>
+     <div class="maytinhbang">
+        <div class="danhsach">
+            <div class="chu">Tin tức tổng hợp</div>
+            <p>Danh mục này đang cập nhật bài viết</p>
+        </div>
+     </div>
+     <div class="dienthoai">
+        <div class="danhsach">
+            <div class="chu">Xu hướng thời trang nữ 2024</div>
+            <p>Xu hướng thời trang nữ hiện nay đang chú trọng đến sự thoải mái, phong cách tinh tế và nét đẹp nữ tính, với nhiều lựa chọn đa dạng cho năm 2024:</p>
+            <ol type="1" class="kieu2">
+                <li><b>Phong cách thanh lịch: </b>Xu hướng thời trang nữ năm nay chú trọng vào sự thanh lịch với các kiểu áo khoác vest nhấn eo, đầm xòe nhẹ nhàng, và sự trở lại của những họa tiết nữ tính như nơ, tạo sự duyên dáng và lãng mạn​</li>
+                <li><b>Chân váy và váy midi: </b>Chân váy midi và các kiểu váy dài vẫn chiếm ưu thế, được yêu thích vì vẻ đẹp nữ tính và dễ kết hợp với nhiều phong cách</li>
+                <li><b>Chân váy maxi jeans: </b>Chân váy maxi jeans trở lại mạnh mẽ, với thiết kế dài và dễ phối đồ, đặc biệt phù hợp cho những cô nàng công sở</li>
+                <li><b>Áo polo: </b>Áo polo, vốn là món đồ cơ bản, đang trở thành món đồ hot, đặc biệt khi được phối với quần short hoặc chân váy​</li>
+                <li><b>Phong cách grunge và Mob Wife: </b>Những phong cách nổi loạn như grunge và Mob Wife cũng có mặt, mang lại sự phá cách với áo khoác lông, họa tiết da báo, và các kiểu trang phục oversized​</li>
+            </ol>
+        </div>
+     </div>
+    
+</body>
+</html>
